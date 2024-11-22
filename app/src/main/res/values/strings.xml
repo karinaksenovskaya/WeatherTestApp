@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Погода</string>
+    <string name="search">Поиск</string>
+    <string name="current_place">ТЕКУЩЕЕ МЕСТО</string>
+    <string name="forecast">Прогноз погоды</string>
+    <string name="empty_result_text">По вашему запросу ничего не найдено</string>
+    <string name="something_went_wrong">Что-то пошло не так!</string>
+    <string name="back">Назад</string>
+    <string name="location_determination">Определение местоположения</string>
+    <string name="failed_to_get_location">Не удалось получить местоположение</string>
+    <string name="Internet_connection_error">Ошибка подключения интернета</string>
+</resources>

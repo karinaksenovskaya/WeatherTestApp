@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="current_place">CURRENT LOCATION</string>
+    <string name="forecast">Weather forecast</string>
+    <string name="empty_result_text">Nothing found matching your request</string>
+    <string name="something_went_wrong">Something went wrong!</string>
+    <string name="location_determination">Location determination</string>
+    <string name="failed_to_get_location">Failed to get location</string>
+    <string name="Internet_connection_error">Internet connection error</string>
+</resources>
