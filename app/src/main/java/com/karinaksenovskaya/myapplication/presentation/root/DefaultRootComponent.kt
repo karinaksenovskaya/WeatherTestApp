@@ -36,6 +36,7 @@ class DefaultRootComponent @AssistedInject constructor(
     @Assisted("fusedLocationClient") private val fusedLocationClient: FusedLocationProviderClient
 ) : RootComponent, ComponentContext by componentContext {
 
+
     private val navigation = StackNavigation<Config>()
     override val stack: Value<ChildStack<*, RootComponent.Child>>
 

@@ -11,9 +11,7 @@ import java.util.Calendar
 import java.util.Locale
 import kotlin.math.roundToInt
 
-fun ComponentContext.componentScope() = CoroutineScope(
-    Dispatchers.Main.immediate + SupervisorJob()
-).apply {
+fun ComponentContext.componentScope() = CoroutineScope(Dispatchers.Main.immediate + SupervisorJob()).apply {
     lifecycle.doOnDestroy { cancel() }
 }
 

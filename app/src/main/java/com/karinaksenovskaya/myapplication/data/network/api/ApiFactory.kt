@@ -11,7 +11,7 @@ object ApiFactory {
 
     private const val BASE_URL = "https://api.weatherapi.com/v1/"
     private const val KEY_PARAM = "key"
-    private const val PARAM_LANG = "lang"
+    private const val LANG_PARAM = "lang"
 
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor{chain->
@@ -20,7 +20,7 @@ object ApiFactory {
                 .url()
                 .newBuilder()
                 .addQueryParameter(KEY_PARAM, BuildConfig.WEATHER_API_KEY)
-                .addQueryParameter(PARAM_LANG, Locale.getDefault().language)
+                .addQueryParameter(LANG_PARAM, Locale.getDefault().language)
                 .build()
             val newRequest = originalRequest
                 .newBuilder()

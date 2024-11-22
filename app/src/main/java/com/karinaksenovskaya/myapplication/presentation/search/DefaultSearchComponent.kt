@@ -20,6 +20,7 @@ class DefaultSearchComponent @AssistedInject constructor(
     @Assisted("componentContext") componentContext: ComponentContext
 ) : SearchComponent, ComponentContext by componentContext {
 
+
     private val store = instanceKeeper.getStore { searchStoreFactory.create() }
     private val scope = componentScope()
 

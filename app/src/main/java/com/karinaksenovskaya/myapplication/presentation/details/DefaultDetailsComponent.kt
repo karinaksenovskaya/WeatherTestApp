@@ -22,6 +22,7 @@ class DefaultDetailsComponent @AssistedInject constructor(
     @Assisted("componentContext") componentContext: ComponentContext
 ) : DetailsComponent, ComponentContext by componentContext {
 
+
     private val store = instanceKeeper.getStore { detailsStoreFactory.create(openReason, city) }
     private val scope = componentScope()
 

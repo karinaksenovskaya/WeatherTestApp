@@ -15,8 +15,7 @@ object GeoFactory {
                 .header("User-Agent", "WeatherApp/1.0")
                 .build()
             chain.proceed(newRequest)
-        }
-        .build()
+        }.build()
 
     val nominatimService: GeoService by lazy {
         Retrofit.Builder()

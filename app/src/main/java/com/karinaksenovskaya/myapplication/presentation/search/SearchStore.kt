@@ -16,6 +16,7 @@ import javax.inject.Inject
 
 interface SearchStore : Store<Intent, State, Label> {
 
+
     sealed interface Intent {
         data class ChangeSearchQuery(val query: String) : Intent
         data object ClickSearch : Intent

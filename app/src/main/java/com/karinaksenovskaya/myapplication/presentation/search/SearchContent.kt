@@ -40,6 +40,7 @@ import com.karinaksenovskaya.myapplication.domain.entity.City
 @Composable
 fun SearchContent(component: SearchComponent) {
 
+
     val state by component.model.collectAsState()
 
     val focusRequest = remember {

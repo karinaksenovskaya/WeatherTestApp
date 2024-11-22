@@ -12,6 +12,7 @@ import com.karinaksenovskaya.myapplication.ui.theme.WeatherGradients
 
 @Composable
 fun LoadingContent() {
+
     Box(
         modifier = Modifier
             .fillMaxSize()

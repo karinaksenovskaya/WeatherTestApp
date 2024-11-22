@@ -13,6 +13,7 @@ import dagger.Provides
 @Module
 interface DataModule {
 
+
     @[ApplicationScope Binds]
     fun bindWeatherRepository(impl: WeatherRepositoryImpl): WeatherRepository
 

@@ -21,6 +21,7 @@ class DefaultErrorComponent @AssistedInject constructor(
     @Assisted("componentContext") componentContext: ComponentContext
 ) : ErrorComponent, ComponentContext by componentContext {
 
+
     private val store = instanceKeeper.getStore { errorStoreFactory.create(errorMsg) }
     private val scope = componentScope()
 

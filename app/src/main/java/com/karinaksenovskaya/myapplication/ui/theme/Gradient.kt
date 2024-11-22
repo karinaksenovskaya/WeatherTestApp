@@ -4,6 +4,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
 data class Gradient(
+
     val primaryGradient: Brush,
     val secondaryGradient: Brush,
     val shadowColor: Color

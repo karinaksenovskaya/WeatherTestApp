@@ -10,6 +10,7 @@ import javax.inject.Inject
 class WeatherRepositoryImpl @Inject constructor(
     private val apiService: ApiService
 ) : WeatherRepository {
+
     override suspend fun getWeather(cityId: Int): Weather {
         return apiService.loadCurrentWeather("$PREFIX_CITY_ID$cityId").toEntity()
     }

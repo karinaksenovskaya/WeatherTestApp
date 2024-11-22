@@ -16,6 +16,7 @@ import javax.inject.Inject
 
 interface DetailsStore : Store<Intent, State, Label> {
 
+
     sealed interface Intent {
         data object ClickSearch : Intent
         data object ClickBack : Intent

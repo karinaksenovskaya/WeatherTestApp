@@ -65,6 +65,7 @@ import kotlin.random.Random
 @Composable
 fun DetailsContent(component: DetailsComponent) {
 
+
     val state by component.model.collectAsState()
 
     val gradient = getGradients()

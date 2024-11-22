@@ -8,6 +8,7 @@ import com.karinaksenovskaya.myapplication.presentation.search.SearchComponent
 
 interface RootComponent {
 
+
     val stack: Value<ChildStack<*, Child>>
 
     sealed interface Child {

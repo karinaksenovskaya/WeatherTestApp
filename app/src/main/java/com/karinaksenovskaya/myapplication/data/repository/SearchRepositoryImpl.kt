@@ -9,6 +9,7 @@ import javax.inject.Inject
 class SearchRepositoryImpl @Inject constructor(
     private val apiService: ApiService
 ) : SearchRepository {
+
     override suspend fun search(query: String): List<City> {
         return apiService.searchCity(query).toEntities()
     }

@@ -10,6 +10,7 @@ import com.karinaksenovskaya.myapplication.ui.theme.MyApplicationTheme
 
 @Composable
 fun RootContent(component: RootComponent) {
+
     MyApplicationTheme {
         Children(stack = component.stack) {
             when (val instance = it.instance) {

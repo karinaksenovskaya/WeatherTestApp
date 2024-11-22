@@ -29,6 +29,7 @@ import com.karinaksenovskaya.myapplication.ui.theme.WeatherGradients
 @Composable
 fun ErrorContent(component: ErrorComponent) {
 
+
     val state by component.model.collectAsState()
 
     Box(

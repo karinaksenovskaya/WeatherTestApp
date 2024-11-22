@@ -5,7 +5,6 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface GeoService {
-
     @GET("reverse")
     suspend fun getReverseGeocoding(
         @Query("lat") lat: Double,

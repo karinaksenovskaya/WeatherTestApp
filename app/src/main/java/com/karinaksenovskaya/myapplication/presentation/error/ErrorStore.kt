@@ -12,6 +12,7 @@ import javax.inject.Inject
 
 interface ErrorStore : Store<Intent, State, Label> {
 
+
     sealed interface Intent {
 
         data object ReturnClick : Intent

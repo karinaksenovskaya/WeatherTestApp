@@ -19,6 +19,7 @@ import javax.inject.Inject
 
 class MainActivity : ComponentActivity() {
 
+
     @Inject
     lateinit var rootComponentFactory: DefaultRootComponent.Factory
 

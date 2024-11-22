@@ -5,4 +5,6 @@ import com.karinaksenovskaya.myapplication.domain.entity.City
 
 fun CityDto.toEntity(): City = City(id, name, country)
 
-fun List<CityDto>.toEntities(): List<City> = map { it.toEntity() }
+fun List<CityDto>.toEntities(): List<City> = map {
+    it.toEntity()
+}
